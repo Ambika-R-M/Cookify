@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cookify - Recipe Game App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍽️ Cookify</h1>
+    <p>Type a dish name to get its recipe and try cooking it step by step like a game!</p>
+
+    <input type="text" id="dishInput" placeholder="e.g., Pasta" />
+    <button onclick="searchRecipe()">Search Recipe</button>
+
+    <div id="result" class="result-box"></div>
+
+    <!-- Try Cooking Button -->
+    <button id="tryCookingBtn" style="display:none;">🍳 Try Cooking Online</button>
+
+    <!-- Cooking Modal -->
+    <div id="cookingModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>👩‍🍳 Cooking Mode</h2>
+        <div id="cookingStepText"></div>
+        <button id="nextStepBtn">Next Step ➡️</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
